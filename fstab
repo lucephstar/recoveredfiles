@@ -1,0 +1,21 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system>                                 <dir>          <type>           <options>                  <dump> <pass>
+# /dev/mapper/MyVol-root
+UUID=cde66911-37c7-40cb-a7f8-bc1040c6d2f0	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/mapper/MyVol-home
+UUID=998eb4f2-f4ad-4f8d-aa46-6301e54a55b1	/home     	ext4      	rw,relatime,data=ordered	0 2
+
+# /dev/mapper/cryptboot
+UUID=09ed75d5-7a95-4e9e-acae-be559162ec6d       /boot     	ext4      	rw,relatime,data=ordered	0 2
+
+# /dev/sdb1
+UUID=79AE-942D                                  /boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/MyVol-swap
+UUID=0207ef23-2e49-43f8-b391-8d1f2eedc023	none      	swap      	defaults,pri=-2	0 0
+
+# /dev/sdc1
+UUID=9f79eb21-6c1c-4b2d-b269-431e242864e5       /home/adrian/media    jfs       defaults,nofail,x-systemd.device-timeout=1    0  2
